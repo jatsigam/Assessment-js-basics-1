@@ -21,7 +21,7 @@ if ((password.length >= 10) && containsLetter.test(password) && containsNumber.t
   console.log("Error! Password does not meet requirements. Please try again")
 }
 
-// Check 2: Password should not contain forbidden words/numbers (12345, 11111, password)
+// Check 2: Password should not contain forbidden words (12345, 11111, password)
 
 if ((password.length >= 10) && containsLetter.test(password) && containsNumber.test(password) && specialCharacters.test(password) && password !== 123456 && password !== 11111 && password !== "password"){
   console.log("Successful attempt! Password is valid")
